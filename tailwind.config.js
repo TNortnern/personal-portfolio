@@ -5,12 +5,21 @@
  ** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
  */
 module.exports = {
+  future: {
+    removeDeprecatedGapUtilities: true,
+    purgeLayersByDefault: true,
+  },
   theme: {
     extend: {
       colors: {
         'light-gray': '#e6e6e6',
         'primary-blue': '#3DC7C6',
         'primary-white': '#E0E0E0',
+        'theme-blue': '#000f21',
+      },
+      fontSize: {
+        '70px': '70px',
+        '80px': '75px',
       },
     },
   },

@@ -1,3 +1,27 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+button:focus {
+    @apply outline-none;
+}
+.btn {
+  @apply px-5 py-2 duration-100 ease-out border rounded-md outline-none;
+}
+
+.btn:focus {
+  @apply outline-none;
+}
+
+.btn-primary {
+  @apply btn border-primary-blue text-primary-blue;
+}
+.btn-primary:hover {
+  @apply bg-primary-blue text-primary-white;
+}
+.btn-white {
+  @apply btn border-primary-white text-primary-white;
+}
+.btn-white:hover {
+  @apply text-black bg-primary-white;
+}

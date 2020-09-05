@@ -1,11 +1,14 @@
 <template>
-  <div class="min-h-screen w-full container container mx-auto p-4">
+  <div class="container w-full min-h-screen p-4 mx-auto">
     <Nuxt />
   </div>
 </template>
 
 <style>
 html {
-  background-color: #000f21;
+  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  @apply bg-theme-blue;
+  @apply text-primary-white;
 }
 </style>
