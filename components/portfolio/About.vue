@@ -1,7 +1,7 @@
 <template>
   <SectionContainer>
     <SectionTitle name="About me" />
-    <div class="flex justify-between max-w-6xl">
+    <div class="flex justify-between max-w-6xl pl-4">
       <div class="w-2/5">
         <h3 class="pb-4 text-3xl">Who am I?</h3>
         <p class="pb-4">
@@ -14,10 +14,10 @@
           interdum neque laoreet, cubilia velit ac vel imperdiet senectus ut,
           nullam tortor litora pulvinar dis.
         </p>
-        <ul class="pb-4">
-          <li class="pb-2">Email: email@email.com</li>
-          <li class="pb-2">Github: tnortnern</li>
-          <li>LinkedIn: tnortrher</li>
+        <ul class="pb-4 flex flex-col">
+          <AboutHighlight name="Email" content="traynorthern@yahoo.com" />
+          <AboutHighlight name="Github" content="tnortnern" />
+          <!-- <AboutHighlight name="LinkedIn" content="https://trayvonnorthern.tech" /> -->
         </ul>
         <button class="btn-primary">Resume</button>
       </div>

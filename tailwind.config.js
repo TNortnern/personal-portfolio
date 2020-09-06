@@ -21,6 +21,9 @@ module.exports = {
         '60px': '60px',
         '70px': '70px',
       },
+      fontFamily: {
+        krub: ['Krub', 'sans-serif'],
+      },
     },
   },
   variants: {},

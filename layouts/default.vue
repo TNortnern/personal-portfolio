@@ -1,8 +1,12 @@
 <template>
-  <main class="container w-full min-h-screen p-4 mx-auto">
+  <main lang="en-us" class="container w-full min-h-screen p-4 mx-auto">
     <Nuxt />
   </main>
 </template>
+
+<script>
+export default {}
+</script>
 
 <style>
 html {
