@@ -23,17 +23,66 @@
       </div>
       <div class="w-2/5">
         <h3 class="pb-4 text-3xl">Trajectory</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
-          distinctio. Iure eveniet maiores modi architecto. Pariatur provident
-          expedita ipsa ex.
-        </p>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas rem
-          perspiciatis illum sed, quo odio iusto aperiam nesciunt corporis quis
-          ducimus nemo temporibus veritatis quidem quae, consequuntur corrupti
-          magni, harum itaque sint totam ratione nam.
-        </p>
+        <!-- component -->
+        <div class="relative w-1/2 m-8">
+          <div
+            class="border-r-2 border-very-light-gray absolute h-full top-0"
+            style="left: 15px"
+          ></div>
+          <ul class="list-none m-0 p-0">
+            <li class="mb-2">
+              <div class="flex items-center mb-1">
+                <div class="bg-very-light-gray rounded-full h-6 w-6 ml-1"></div>
+                <div class="flex-1 ml-4 font-light">2017-2019</div>
+              </div>
+              <div class="ml-12 min-w-max-content">
+                <span class="block font-bold"
+                  >Ozark Technical Community College</span
+                >
+                <span class="block font-bold">
+                  Springfield, MO - Computer Science</span
+                >
+              </div>
+            </li>
+            <li class="mb-2">
+              <div class="flex items-center mb-1">
+                <div class="bg-very-light-gray rounded-full h-8 w-8"></div>
+                <div class="flex-1 ml-4 font-medium">
+                  Nov 2017 - Multiple Releases
+                </div>
+              </div>
+              <div class="ml-12">v0.1.0 - v0.2.2</div>
+            </li>
+            <li class="mb-2">
+              <div class="flex items-center mb-1">
+                <div class="bg-very-light-gray rounded-full h-8 w-8"></div>
+                <div class="flex-1 ml-4 font-medium">
+                  Feb 2018 - Other stuff happened
+                </div>
+              </div>
+              <div class="ml-12">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus
+                perspiciatis facilis deserunt excepturi sunt pariatur
+                consequuntur eveniet molestias ea quia? Magni veniam illo optio
+                tempora modi exercitationem qui adipisci ex.
+              </div>
+            </li>
+            <li class="mb-2">
+              <div class="flex items-center mb-1">
+                <div class="bg-very-light-gray rounded-full h-8 w-8"></div>
+                <div class="flex-1 ml-4 font-medium">
+                  July 2018 - More stuff happened
+                </div>
+              </div>
+              <div class="ml-12">
+                Consequuntur odit explicabo officiis veniam incidunt non velit
+                ex consectetur magnam minima vero hic impedit cumque, blanditiis
+                autem distinctio facere dolor atque facilis, eos, labore sunt
+                iusto. Beatae, quas, dolorem?
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </SectionContainer>

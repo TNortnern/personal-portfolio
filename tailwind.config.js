@@ -16,6 +16,7 @@ module.exports = {
         'primary-blue': '#3DC7C6',
         'primary-white': '#E0E0E0',
         'theme-blue': '#000f21',
+        'very-light-gray': '#b8c5d7',
       },
       fontSize: {
         '60px': '60px',
