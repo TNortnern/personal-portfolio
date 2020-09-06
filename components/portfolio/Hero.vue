@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="flex">
-      <div class="w-1/2">
+    <div class="flex justify-center max-w-6xl mx-auto">
+      <div class="w-2/5">
         <p class="pb-1 -mb-6 text-70px">Hello,</p>
         <p class="pb-1 font-bold whitespace-no-wrap text-80px">
           I'm Trayvon Northern
@@ -26,7 +26,7 @@
         </div>
       </div>
       <div>
-        <img src="/hero.svg" alt="hero image" />
+        <img class="w-4/5 ml-56" src="/laptop.png" alt="hero image" />
       </div>
     </div>
   </div>

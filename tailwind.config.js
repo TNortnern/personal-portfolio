@@ -18,8 +18,8 @@ module.exports = {
         'theme-blue': '#000f21',
       },
       fontSize: {
-        '70px': '70px',
-        '80px': '75px',
+        '70px': '60px',
+        '80px': '70px',
       },
     },
   },
