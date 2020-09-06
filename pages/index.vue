@@ -1,6 +1,9 @@
 <template>
   <AppLayout>
     <Hero />
+    <About />
+    <Skills />
+    <Projects />
   </AppLayout>
 </template>
 

@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <SectionContainer>
     <div class="flex justify-center max-w-6xl mx-auto">
       <div class="w-2/5">
-        <p class="pb-1 -mb-6 text-70px">Hello,</p>
-        <p class="pb-1 font-bold whitespace-no-wrap text-80px">
+        <p class="pb-1 -mb-6 text-60px">Hello,</p>
+        <p class="pb-1 font-bold whitespace-no-wrap text-70px">
           I'm Trayvon Northern
         </p>
         <p class="pb-8 text-lg">
@@ -29,7 +29,7 @@
         <img class="w-4/5 ml-56" src="/laptop.png" alt="hero image" />
       </div>
     </div>
-  </div>
+  </SectionContainer>
 </template>
 
 <script>
