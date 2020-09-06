@@ -25,6 +25,9 @@ module.exports = {
       fontFamily: {
         krub: ['Krub', 'sans-serif'],
       },
+      margin: {
+        '19px': '19px',
+      },
     },
   },
   variants: {},
