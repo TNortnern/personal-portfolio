@@ -19,24 +19,11 @@
           <AboutHighlight name="Github" content="tnortnern" />
           <!-- <AboutHighlight name="LinkedIn" content="https://trayvonnorthern.tech" /> -->
         </ul>
-        <button class="btn-primary">Resume</button>
+        <nuxt-link to="#resume" class="btn-primary">Resume</nuxt-link>
       </div>
-      <div style="width: 30%">
-        <h3 class="pb-4 text-3xl">Trajectory</h3>
-        <!-- component -->
-        <div class="relative w-1/2 m-8">
-          <div
-            class="absolute top-0 h-full border-r-2 border-very-light-gray"
-            style="left: 15px"
-          ></div>
-          <ul class="p-0 m-0 list-none">
-            <TimelinePoint />
-            <TimelinePoint :item="{ content: 'Freelance - Web Developer' }" />
-            <TimelinePoint />
-            <TimelinePoint />
-            <TimelinePoint />
-          </ul>
-        </div>
+      <div class="w-14/25">
+        <h3 class="pb-4 text-3xl text-center">Trajectory</h3>
+        <Timeline />
       </div>
     </div>
   </SectionContainer>

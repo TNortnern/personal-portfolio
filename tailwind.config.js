@@ -28,6 +28,9 @@ module.exports = {
       margin: {
         '19px': '19px',
       },
+      spacing: {
+        '14/25': '56%',
+      },
     },
   },
   variants: {},

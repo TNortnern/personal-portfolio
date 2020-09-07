@@ -1,26 +1,57 @@
 <template>
-  <li class="mb-2">
-    <div class="flex items-center mb-1">
-      <div class="w-6 h-6 ml-1 rounded-full bg-very-light-gray"></div>
-      <div class="flex-1 font-light ml-19px">
-        {{ item.date || 2017 }}
+  <div>
+    <div v-if="!left" class="flex">
+      <div class="w-full"></div>
+      <!-- Left side -->
+      <div class="w-16 px-4 relative flex items-start justify-center">
+        <!-- Circle -->
+        <div class="h-8 w-8 rounded-full bg-cool-gray-400"></div>
+        <!-- Line -->
+        <div class="w-1 bg-cool-gray-400 absolute h-full mt-2"></div>
+      </div>
+      <div class="w-full">
+        <div class="font-light w-full">{{ item.date }}</div>
+        <div class="font-semibold my-2">
+          {{ item.content }}
+          <slot />
+        </div>
+        <button class="font-light hover:text-primary-blue" :class="marginClass">
+          see more
+        </button>
       </div>
     </div>
-    <div class="ml-12 font-light">
-      <span class="block" style="width: 245px"
-        >Ozark Technical Community College, Springfield, MO - Computer
-        Science</span
-      >
+    <div v-else class="w-full flex">
+      <div class="w-full text-right">
+        <div class="font-light w-full">{{ item.date }}</div>
+        <div class="font-semibold text-lg my-2">
+          {{ item.content }}
+          <slot />
+        </div>
+        <button :class="marginClass" class="font-light hover:text-primary-blue">
+          see more
+        </button>
+      </div>
+      <div class="w-16 px-4 relative flex items-start justify-center">
+        <div class="h-8 w-8 rounded-full bg-cool-gray-400"></div>
+        <div class="w-1 bg-cool-gray-400 absolute h-full mt-2"></div>
+      </div>
+      <div class="w-full"></div>
+      <!-- Right side -->
     </div>
-    <button class="block ml-12 font-light hover:text-primary-blue">
-      see more
-    </button>
-  </li>
+  </div>
 </template>
 
 <script>
 export default {
   props: {
+    left: {
+      type: Boolean,
+      default: false,
+    },
+    marginClass: {
+      type: String,
+      default: 'mb-1',
+    },
     item: {
       type: Object,
       default: () => [],
