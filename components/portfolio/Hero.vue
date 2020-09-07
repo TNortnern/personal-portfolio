@@ -26,7 +26,7 @@
         </div>
       </div>
       <div>
-        <img class="w-4/5 ml-56" src="/laptop.png" alt="hero image" />
+        <Laptop class="w-4/5 ml-56" />
       </div>
     </div>
   </SectionContainer>
