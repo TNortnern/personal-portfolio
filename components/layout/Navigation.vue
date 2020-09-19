@@ -1,36 +1,6 @@
 <template>
   <nav>
-    <div class="flex items-center justify-between">
-      <nuxt-link to="/" class="flex text-2xl">
-        <span class="font-bold">Trayvon</span>
-        <span class="font-light">Northern</span>
-      </nuxt-link>
-      <ul class="flex items-center space-x-20">
-        <li v-for="route in $store.state.navigation.routes" :key="route.name">
-          <nuxt-link
-            v-if="!route.external"
-            :to="route.to"
-            class="hover:text-primary-blue"
-            >{{ route.name }}</nuxt-link
-          >
-          <a
-            v-else
-            :href="route.to"
-            target="__blank"
-            class="hover:text-primary-blue"
-            >{{ route.name }}</a
-          >
-        </li>
-        <li>
-          <button
-            to="#"
-            class="px-1.5 py-1 border rounded-md border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white duration-100 ease-out focus:outline-none"
-          >
-            contact me
-          </button>
-        </li>
-      </ul>
-    </div>
+    <DesktopNavigation />
   </nav>
 </template>
 

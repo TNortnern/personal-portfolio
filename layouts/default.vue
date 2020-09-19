@@ -15,4 +15,7 @@ html {
   @apply bg-theme-blue;
   @apply text-primary-white;
 }
+p {
+  font-family: 'Krub', 'sans-serif';
+}
 </style>

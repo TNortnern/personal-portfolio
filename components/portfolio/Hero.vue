@@ -1,6 +1,6 @@
 <template>
   <SectionContainer>
-    <div class="flex justify-center max-w-6xl mx-auto">
+    <div class="flex justify-center mx-auto lg:max-w-6xl">
       <div class="w-2/5">
         <p class="pb-1 -mb-6 text-60px">Hello,</p>
         <p class="pb-1 font-bold whitespace-no-wrap text-70px">
@@ -26,7 +26,7 @@
         </div>
       </div>
       <div>
-        <Laptop class="w-4/5 ml-56" />
+        <Laptop class="hidden w-4/5 ml-56 lg:block" />
       </div>
     </div>
   </SectionContainer>
