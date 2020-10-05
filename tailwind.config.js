@@ -19,8 +19,8 @@ module.exports = {
         'very-light-gray': '#b8c5d7',
       },
       fontSize: {
+        '55px': '55px',
         '60px': '60px',
-        '70px': '70px',
       },
       fontFamily: {
         krub: ['Krub', 'sans-serif'],
