@@ -11,9 +11,13 @@
       </div>
       <div class="w-full">
         <div class="font-light w-full">{{ item.date }}</div>
-        <div class="font-semibold my-2">
-          {{ item.content }}
-          <slot />
+        <div class="font-semibold text-lg my-2">
+          <template v-if="!item.html">
+            {{ item.content }}
+          </template>
+          <template v-else>
+            <div v-html="item.html"></div>
+          </template>
         </div>
         <button class="font-light hover:text-primary-blue" :class="marginClass">
           see more
@@ -24,8 +28,12 @@
       <div class="w-full text-right">
         <div class="font-light w-full">{{ item.date }}</div>
         <div class="font-semibold text-lg my-2">
-          {{ item.content }}
-          <slot />
+          <template v-if="!item.html">
+            {{ item.content }}
+          </template>
+          <template v-else>
+            <div v-html="item.html"></div>
+          </template>
         </div>
         <button :class="marginClass" class="font-light hover:text-primary-blue">
           see more

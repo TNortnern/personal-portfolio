@@ -31,6 +31,11 @@ module.exports = {
       spacing: {
         '14/25': '56%',
       },
+      inset: {
+        '110px': '110px',
+        '46px': '46px',
+        '40px': '40px',
+      },
     },
   },
   variants: {},

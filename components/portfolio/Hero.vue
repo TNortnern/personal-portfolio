@@ -7,9 +7,8 @@
           <span class="block md:inline -mb-4 md:mb-0">I'm</span>
           Trayvon Northern
         </p>
-        <p class="pb-8 lg:text-lg w-3/4">
-          I'm a recent CS Grad that is passionate about Web Development. I enjoy
-          frontend development most, from building UI's to email development.
+        <p class="pb-8 lg:text-lg w-3/4 lg:w-full">
+          {{ $store.state.portfolio.content.introText }}
         </p>
         <div
           class="flex w-full justify-center lg:justify-start lg:w-auto pb-8 space-x-2"
@@ -32,6 +31,19 @@
         <Laptop class="hidden w-4/5 ml-56 lg:block" />
       </div>
     </div>
+    <!-- <div class="hidden xl:block">
+      <div class="w-full relative">
+        <span
+          class="transform -rotate-90 relative right-46px bottom-110px inline-block"
+          >traynorthern@yahoo.com</span
+        >
+      </div>
+      <img
+        class="transform relative left-40px bottom-3"
+        src="/line.png"
+        alt="line"
+      />
+    </div> -->
   </SectionContainer>
 </template>
 
