@@ -1,10 +1,7 @@
 <template>
   <SectionContainer>
     <SectionTitle name="Skills" />
-    <div
-      v-if="skills"
-      class="flex flex-wrap justify-center mx-auto lg:justify-start"
-    >
+    <div v-if="skills" class="flex flex-wrap justify-center">
       <div
         v-for="skill in skills"
         :key="skill.id"
