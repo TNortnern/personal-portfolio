@@ -14,6 +14,7 @@ module.exports = {
       colors: {
         'light-gray': '#e6e6e6',
         'primary-blue': '#3DC7C6',
+        'light-primary-blue': '#051931',
         'primary-white': '#E0E0E0',
         'theme-blue': '#000f21',
         'very-light-gray': '#b8c5d7',
@@ -35,6 +36,9 @@ module.exports = {
         '110px': '110px',
         '46px': '46px',
         '40px': '40px',
+      },
+      width: {
+        'project-info-card': '25rem',
       },
     },
   },
