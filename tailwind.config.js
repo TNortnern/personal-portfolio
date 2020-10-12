@@ -18,6 +18,7 @@ module.exports = {
         'primary-white': '#E0E0E0',
         'theme-blue': '#000f21',
         'very-light-gray': '#b8c5d7',
+        'custom-gray-100': '#D3DFE9',
       },
       fontSize: {
         '55px': '55px',
@@ -38,7 +39,11 @@ module.exports = {
         '40px': '40px',
       },
       width: {
-        'project-info-card': '25rem',
+        'project-info-card': '35rem',
+        'project-image': '40.25rem',
+      },
+      screens: {
+        xxl: '1600px',
       },
     },
   },
