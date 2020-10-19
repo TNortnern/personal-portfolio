@@ -19,6 +19,7 @@ module.exports = {
         'theme-blue': '#000f21',
         'very-light-gray': '#b8c5d7',
         'custom-gray-100': '#D3DFE9',
+        'app-faded': '#8C8D90',
       },
       fontSize: {
         '55px': '55px',
@@ -48,7 +49,9 @@ module.exports = {
       },
     },
   },
-  variants: {},
+  variants: {
+    opacity: ['responsive', 'hover', 'focus', 'group-hover'],
+  },
   plugins: [require('@tailwindcss/ui')],
   purge: {
     // Learn more on https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css

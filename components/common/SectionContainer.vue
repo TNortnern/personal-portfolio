@@ -1,11 +1,18 @@
 <template>
-  <div class="mb-16">
+  <div class="container w-full p-4 mx-auto">
     <slot />
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    customStyle: {
+      type: Boolean,
+      default: false,
+    },
+  },
+}
 </script>
 
 <style></style>

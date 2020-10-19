@@ -1,7 +1,9 @@
 <template>
-  <nav>
-    <DesktopNavigation />
-  </nav>
+  <SectionContainer>
+    <nav>
+      <DesktopNavigation />
+    </nav>
+  </SectionContainer>
 </template>
 
 <script>

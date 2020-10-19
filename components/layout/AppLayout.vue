@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Navigation />
+    <Navigation class="relative z-10" />
     <div class="pt-28"><slot /></div>
     <Footer />
   </div>

@@ -1,10 +1,14 @@
 <template>
   <SectionContainer>
-    <div class="flex justify-center mx-auto lg:max-w-6xl">
+    <div class="flex flex-wrap justify-center mx-auto lg:max-w-6xl">
       <HeroMetaContent />
-      <div>
-        <PersonTyping class="hidden w-4/5 ml-56 lg:block" />
-      </div>
+      <!-- <div>
+        <img
+          src="https://images.unsplash.com/photo-1550645612-83f5d594b671?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+          alt=""
+          class="border-4 border-primary-blue"
+        />
+      </div> -->
     </div>
     <!-- <div class="hidden xl:block">
       <div class="relative w-full">
@@ -23,7 +27,9 @@
 </template>
 
 <script>
-export default {}
+export default {
+  components: {},
+}
 </script>
 
 <style></style>
