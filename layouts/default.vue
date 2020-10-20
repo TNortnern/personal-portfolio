@@ -1,5 +1,6 @@
 <template>
   <main lang="en-us" class="">
+    <Modal />
     <Nuxt />
   </main>
 </template>
@@ -18,5 +19,20 @@ html {
 }
 p {
   font-family: 'Krub', 'sans-serif';
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+
+.scale-enter-active,
+.scale-leave-active {
+  transition: all 0.2s;
+}
+.scale-enter, .scale-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  transform: scale(0);
 }
 </style>

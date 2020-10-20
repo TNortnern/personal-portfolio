@@ -19,7 +19,10 @@
                 <li>Vue/</li>
                 <li>Tailwind</li>
               </ul>
-              <button class="text-lg bg-theme-blue btn hover:opacity-75">
+              <button
+                class="text-lg bg-theme-blue btn hover:opacity-75"
+                @click="$store.commit('portfolio/setModal', true)"
+              >
                 View Project
               </button>
             </div>
