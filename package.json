@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "nuxt --port-3008",
     "build": "nuxt build",
     "start": "nuxt start",
     "deploy": "nuxt build && nuxt generate",

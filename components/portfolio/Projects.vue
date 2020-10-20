@@ -2,12 +2,28 @@
   <SectionContainer id="projects">
     <SectionTitle name="Projects" />
     <div class="grid grid-cols-2 gap-8 justify-items-center">
-      <div v-for="(item, i) in projects" :key="i" class="relative group">
+      <div
+        v-for="(item, i) in projects"
+        :key="i"
+        class="relative cursor-pointer group"
+      >
         <div class="relative w-full h-full">
           <img class="w-full h-full" :src="item.images[0]" alt="test" />
           <div
-            class="absolute inset-0 w-full h-full duration-150 ease-in-out bg-gray-600 bg-opacity-50 group-hover:opacity-100"
-          ></div>
+            class="absolute inset-0 flex items-center justify-center w-full h-full duration-300 ease-in-out bg-white opacity-0 group-hover:opacity-100"
+          >
+            <div class="flex flex-col items-center font-bold">
+              <h1 class="mb-3 text-3xl text-theme-blue">{{ item.name }}</h1>
+              <ul class="flex mb-3 text-lg text-primary-blue">
+                <li>Strapi/</li>
+                <li>Vue/</li>
+                <li>Tailwind</li>
+              </ul>
+              <button class="text-lg bg-theme-blue btn hover:opacity-75">
+                View Project
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
