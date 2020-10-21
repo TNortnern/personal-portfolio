@@ -1,7 +1,7 @@
 <template>
   <SectionContainer id="projects">
     <SectionTitle name="Projects" />
-    <div class="grid grid-cols-2 gap-8 justify-items-center">
+    <div class="grid grid-cols-2 gap-x-20 gap-y-8 justify-items-center">
       <div
         v-for="(item, i) in projects"
         :key="i"
@@ -21,7 +21,7 @@
               </ul>
               <button
                 class="text-lg bg-theme-blue btn hover:opacity-75"
-                @click="$store.commit('portfolio/setModal', true)"
+                @click="$store.commit('portfolio/setCurrent', item)"
               >
                 View Project
               </button>

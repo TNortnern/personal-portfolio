@@ -5,6 +5,7 @@ const state = () => ({
     timelines: [],
   },
   modal: null,
+  current: null,
 })
 
 const mutations = {
@@ -13,6 +14,9 @@ const mutations = {
   },
   setModal(state, value) {
     state.modal = value
+  },
+  setCurrent(state, value) {
+    state.current = value
   },
 }
 
