@@ -1,29 +1,21 @@
 <template>
-  <SectionContainer>
-    <div class="flex flex-wrap justify-center mx-auto lg:max-w-6xl">
-      <HeroMetaContent />
-      <!-- <div>
-        <img
-          src="https://images.unsplash.com/photo-1550645612-83f5d594b671?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
-          alt=""
-          class="border-4 border-primary-blue"
-        />
-      </div> -->
-    </div>
-    <!-- <div class="hidden xl:block">
-      <div class="relative w-full">
-        <span
-          class="relative inline-block transform -rotate-90 right-46px bottom-110px"
-          >traynorthern@yahoo.com</span
-        >
+  <div class="text-white bg-theme-blue" style="height: 75vh">
+    <SectionContainer>
+      <Navigation />
+      <div
+        class="flex flex-wrap items-center justify-center mx-auto lg:max-w-6xl"
+      >
+        <div>
+          <h1 class="text-5xl text-center">
+            Hello I'm <span class="text-primary-blue">Trayvon Northern</span>
+          </h1>
+          <h1 class="text-5xl">
+            The <span class="text-primary-blue">Full Stack</span> Web Developer
+          </h1>
+        </div>
       </div>
-      <img
-        class="relative transform left-40px bottom-3"
-        src="/line.png"
-        alt="line"
-      />
-    </div> -->
-  </SectionContainer>
+    </SectionContainer>
+  </div>
 </template>
 
 <script>

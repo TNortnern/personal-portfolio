@@ -1,8 +1,8 @@
 <template>
-  <div class="flex flex-wrap justify-center lg:block lg:w-2/5 font-quicksand">
-    <p class="pb-1 -mb-3 md:-mb-6 text-55px font-quicksand">Hello,</p>
+  <div class="flex flex-wrap justify-center lg:block lg:w-2/5 font-montserrat">
+    <p class="pb-1 -mb-3 md:-mb-6 text-55px font-montserrat">Hello,</p>
     <p
-      class="pb-1 font-bold text-center lg:whitespace-no-wrap text-60px font-quicksand"
+      class="pb-1 font-bold text-center lg:whitespace-no-wrap text-60px font-montserrat"
     >
       <span class="block -mb-4 md:inline md:mb-0">I'm</span>
       Trayvon Northern

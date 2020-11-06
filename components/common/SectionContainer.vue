@@ -1,5 +1,5 @@
 <template>
-  <div class="container w-full p-4 mx-auto">
+  <div :class="'container w-full p-4 mx-auto ' + classes">
     <slot />
   </div>
 </template>
@@ -10,6 +10,10 @@ export default {
     customStyle: {
       type: Boolean,
       default: false,
+    },
+    classes: {
+      type: String,
+      default: '',
     },
   },
 }
