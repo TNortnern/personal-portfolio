@@ -1,9 +1,9 @@
 <template>
-  <div class="text-white bg-theme-blue" style="height: 75vh">
+  <div class="h-screen text-white bg-theme-blue">
     <SectionContainer>
       <Navigation />
       <div
-        class="flex flex-wrap items-center justify-center mx-auto lg:max-w-6xl"
+        class="flex flex-wrap items-center justify-center h-screen mx-auto lg:max-w-6xl"
       >
         <div>
           <h1 class="text-5xl text-center">
@@ -12,6 +12,10 @@
           <h1 class="text-5xl">
             The <span class="text-primary-blue">Full Stack</span> Web Developer
           </h1>
+          <div class="mt-3 text-center">
+            <button class="mr-2 btn">Portfolio</button>
+            <button class="btn">Resume</button>
+          </div>
         </div>
       </div>
     </SectionContainer>
@@ -24,4 +28,11 @@ export default {
 }
 </script>
 
-<style></style>
+<style scoped>
+.btn {
+  @apply duration-150 ease-in-out text-2xl;
+}
+.btn:hover {
+  @apply bg-primary-blue border-primary-blue;
+}
+</style>
