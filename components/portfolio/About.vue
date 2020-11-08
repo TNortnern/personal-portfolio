@@ -25,7 +25,7 @@
           </ul>
           <nuxt-link to="#resume" class="btn-primary">Resume</nuxt-link>
         </div>
-        <div class="lg:w-14/25">
+        <div class="w-full lg:w-14/25">
           <h3 class="pb-4 mt-8 text-3xl font-bold lg:text-center lg:mt-0">
             Trajectory
           </h3>
