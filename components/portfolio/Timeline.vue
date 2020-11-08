@@ -1,6 +1,6 @@
 <template>
-  <div class="antialiased h-full w-full">
-    <div class="p-12">
+  <div class="w-full h-full antialiased">
+    <div class="lg:p-12">
       <TimelinePoint
         v-for="{ id, from, to, end, current, html, content, left } in $store
           .state.portfolio.content.timelines"

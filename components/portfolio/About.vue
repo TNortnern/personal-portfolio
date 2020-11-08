@@ -4,8 +4,8 @@
       <SectionTitle>
         About <span class="text-primary-blue">Me</span>
       </SectionTitle>
-      <div class="flex justify-between pl-4">
-        <div class="w-2/5">
+      <div class="flex flex-wrap justify-center pl-4 lg:justify-between">
+        <div class="w-full lg:w-2/5">
           <h3 class="pb-4 text-3xl font-bold">Who am I?</h3>
           <p class="pb-4">
             I'm a recent CS Grad that is passionate about Web Development. I
@@ -25,8 +25,10 @@
           </ul>
           <nuxt-link to="#resume" class="btn-primary">Resume</nuxt-link>
         </div>
-        <div class="w-14/25">
-          <h3 class="pb-4 text-3xl font-bold text-center">Trajectory</h3>
+        <div class="lg:w-14/25">
+          <h3 class="pb-4 mt-8 text-3xl font-bold lg:text-center lg:mt-0">
+            Trajectory
+          </h3>
           <Timeline />
         </div>
       </div>
