@@ -1,6 +1,6 @@
 <template>
   <div class="h-screen text-white bg-theme-blue">
-    <SectionContainer>
+    <SectionContainer :default-padding="false">
       <Navigation />
       <div
         class="flex flex-wrap items-center justify-center h-screen mx-auto lg:max-w-6xl"
@@ -30,7 +30,7 @@ export default {
 
 <style scoped>
 .btn {
-  @apply duration-150 ease-in-out text-2xl;
+  @apply duration-150 ease-in-out text-xl;
 }
 .btn:hover {
   @apply bg-primary-blue border-primary-blue;

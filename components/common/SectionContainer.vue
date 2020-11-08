@@ -1,10 +1,11 @@
 <template>
-  <div :class="'container w-full p-4 mx-auto ' + classes">
+  <div :class="'container w-full p-4 mx-auto' + computedClasses">
     <slot />
   </div>
 </template>
 
 <script>
+import { computed } from '@nuxtjs/composition-api'
 export default {
   props: {
     customStyle: {
@@ -15,6 +16,19 @@ export default {
       type: String,
       default: '',
     },
+    defaultPadding: {
+      type: Boolean,
+      default: true,
+    },
+  },
+  setup(props) {
+    const computedClasses = computed(() => {
+      const padding = props.defaultPadding ? 'py-20' : ''
+      return ` ${props.classes} ${padding}`
+    })
+    return {
+      computedClasses,
+    }
   },
 }
 </script>

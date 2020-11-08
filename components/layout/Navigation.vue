@@ -1,6 +1,6 @@
 <template>
   <div>
-    <SectionContainer classes="absolute inset-0 h-48">
+    <SectionContainer :default-padding="false" classes="absolute inset-0 h-48">
       <nav class="text-white">
         <DesktopNavigation />
       </nav>

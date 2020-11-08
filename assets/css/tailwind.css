@@ -19,7 +19,7 @@ button:focus {
   @apply btn border-primary-blue text-primary-blue;
 }
 .btn-primary:hover {
-  @apply bg-primary-blue text-primary-white;
+  @apply text-white bg-primary-blue;
 }
 .btn-white {
   @apply btn border-primary-white text-primary-white;
