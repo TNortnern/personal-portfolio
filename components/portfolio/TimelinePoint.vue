@@ -19,9 +19,9 @@
             <div v-html="item.html"></div>
           </template>
         </div>
-        <button class="hover:text-primary-blue" :class="marginClass">
+        <!-- <button class="hover:text-primary-blue" :class="marginClass">
           see more
-        </button>
+        </button> -->
       </div>
     </div>
     <div v-else class="flex w-full">
@@ -35,9 +35,9 @@
             <div v-html="item.html"></div>
           </template>
         </div>
-        <button :class="marginClass" class="hover:text-primary-blue">
+        <!-- <button :class="marginClass" class="hover:text-primary-blue">
           see more
-        </button>
+        </button> -->
       </div>
       <div class="relative flex items-start justify-center w-16 px-4">
         <div class="w-8 h-8 rounded-full bg-cool-gray-400"></div>

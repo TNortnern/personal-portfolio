@@ -6,12 +6,15 @@
         class="flex flex-wrap items-center justify-center h-screen mx-auto lg:max-w-6xl"
       >
         <div>
-          <h1 class="text-5xl text-center">
-            Hello I'm <span class="text-primary-blue">Trayvon Northern</span>
-          </h1>
-          <h1 class="text-5xl">
-            The <span class="text-primary-blue">Full Stack</span> Web Developer
-          </h1>
+          <div class="text-3xl sm:text-5xl">
+            <h1 class="text-center">
+              Hello I'm <span class="text-primary-blue">Trayvon Northern</span>
+            </h1>
+            <h1>
+              The <span class="text-primary-blue">Full Stack</span> Web
+              Developer
+            </h1>
+          </div>
           <div class="mt-3 text-center">
             <button class="mr-2 btn">Portfolio</button>
             <button class="btn">Resume</button>

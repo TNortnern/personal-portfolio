@@ -1,7 +1,7 @@
 <template>
-  <li class="pb-2 flex">
-    <div class="w-56">{{ name }}:</div>
-    <div class="ml-12">{{ content }}</div>
+  <li class="flex pb-2">
+    <div class="w-28 sm:w-56">{{ name }}:</div>
+    <div class="sm:ml-12">{{ content }}</div>
   </li>
 </template>
 

@@ -1,5 +1,5 @@
 <template>
-  <li class="text-center sm:text-left">
+  <li class="ext-left">
     <p class="text-lg font-bold text-primary-blue">{{ item.date }}</p>
     <div class="my-3 text-2xl">
       <h2>{{ content }}</h2>
