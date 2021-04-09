@@ -46,7 +46,10 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: [{ src: '~/plugins/vue-swiper', ssr: false }],
+  plugins: [
+    { src: '~/plugins/vue-swiper', ssr: false },
+    '~/plugins/v-click-outside',
+  ],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
