@@ -12,7 +12,7 @@
         class="fixed inset-0 z-30 flex items-center justify-center h-screen"
       >
         <div
-          class="w-4/5 md:w-3/4 xl:w-11/12 overflow-y-auto shadow-2xl bg-light-primary-blue h-3/4 xxl:h-2/3"
+          class="w-4/5 md:w-3/4 xl:w-10/12 overflow-y-auto shadow-2xl bg-light-primary-blue h-3/4 xxl:h-2/3 relative rounded-lg"
         >
           <!-- <div
             class="text-xl bg-green-300 py-4 px-4"

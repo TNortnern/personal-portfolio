@@ -32,7 +32,7 @@
                 <p>{{ skill.name }}</p>
               </div>
             </div>
-            <div class="flex mt-12">
+            <div class="flex absolute xl:bottom-11 2xl:bottom-3">
               <nuxt-link
                 to="#"
                 class="relative flex justify-center items-center px-6 py-3.5 group mr-5"
@@ -54,7 +54,7 @@
             </div>
           </div>
           <!-- <h1 class="text-3xl">{{ project }}</h1> -->
-          <div style="width: 56%" class="w-1/2 relative">
+          <div style="width: 56%" class="w-1/2 relative mt-2">
             <div>
               <swiper
                 ref="swiper"
@@ -69,7 +69,7 @@
                 </swiper-slide>
               </swiper>
             </div>
-            <div class="mt-20 flex justify-end">
+            <div class="mt-20 xl:mt-10 flex justify-end">
               <button
                 class="text-primary-blue w-20 h-20 cursor-pointer duration-150 hover:opacity-75 previous"
               >
