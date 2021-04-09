@@ -1,28 +1,27 @@
 <template>
-  <div style="width: 56%" class="w-1/2 relative mt-2">
+  <div class="relative mt-2 w-full xl:w-slider-dekstop-width">
     <div>
-      <swiper ref="swiper" class="swiper relative z-50" :options="swiperOption">
+      <swiper
+        ref="swiper"
+        auto-update
+        class="swiper relative z-50"
+        :options="swiperOption"
+      >
         <swiper-slide v-for="(item, i) in project.images" :key="item + i">
           <img class="w-full" :src="item" alt="" />
         </swiper-slide>
       </swiper>
     </div>
-    <div class="mt-20 xl:mt-10 flex justify-end">
-      <button
-        class="text-primary-blue w-20 h-20 cursor-pointer duration-150 hover:opacity-75 previous"
-      >
-        <chevron class="w-20 h-20" />
-      </button>
-      <button
-        class="text-primary-blue cursor-pointer duration-150 hover:opacity-75 transform rotate-180 next"
-      >
-        <chevron class="w-20 h-20" />
-      </button>
-    </div>
+    <project-slider-controls
+      :next="next"
+      :prev="prev"
+      class="hidden xl:flex controls"
+    />
   </div>
 </template>
 
 <script>
+import { ref, onMounted } from '@nuxtjs/composition-api'
 export default {
   props: {
     project: {
@@ -31,20 +30,37 @@ export default {
     },
   },
   setup() {
+    const swiper = ref(null)
+    const $swiper = ref(null)
+    onMounted(() => {
+      $swiper.value = swiper.value.$swiper
+    })
+    const next = () => {
+      $swiper.value.slideNext()
+    }
+    const prev = () => {
+      $swiper.value.slidePrev()
+    }
     return {
       swiperOption: {
         loop: true,
+        autoplay: {
+          delay: 3000,
+        },
         pagination: {
           el: '.swiper-pagination',
         },
-        navigation: {
-          nextEl: '.next',
-          prevEl: '.previous',
-        },
       },
+      swiper,
+      next,
+      prev,
     }
   },
 }
 </script>
 
-<style></style>
+<style>
+.swiper img {
+  @apply xl:h-xl-modal-image xxl:h-2xl-modal-image h-36;
+}
+</style>

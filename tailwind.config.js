@@ -32,6 +32,7 @@ module.exports = {
       height: {
         'xl-modal-image': '350.212px',
         '2xl-modal-image': '408.212px',
+        'modal-paragraph': '120px',
       },
       margin: {
         '19px': '19px',
@@ -47,9 +48,13 @@ module.exports = {
       width: {
         'project-info-card': '35rem',
         'project-image': '40.25rem',
+        'slider-dekstop-width': '56%',
       },
       screens: {
         xxl: '1600px',
+      },
+      minWidth: {
+        'mobile-project-modal-listing': '104.55px',
       },
     },
   },
