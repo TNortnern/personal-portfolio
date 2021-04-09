@@ -5,9 +5,8 @@
  ** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
  */
 module.exports = {
-  future: {
-    removeDeprecatedGapUtilities: true,
-    purgeLayersByDefault: true,
+  tailwindcss: {
+    // jit: true,
   },
   theme: {
     extend: {
@@ -29,6 +28,10 @@ module.exports = {
         krub: ['Krub', 'sans-serif'],
         quicksand: ['Quicksand', 'Source Sans Pro', 'sans-serif'],
         montserrat: ['Montserrat', 'sans-serif'],
+      },
+      height: {
+        'xl-modal-image': '350.212px',
+        '2xl-modal-image': '408.212px',
       },
       margin: {
         '19px': '19px',
@@ -52,6 +55,22 @@ module.exports = {
   },
   variants: {
     opacity: ['responsive', 'hover', 'focus', 'group-hover'],
+    scale: [
+      'responsive',
+      'dark',
+      'group-hover',
+      'focus-within',
+      'hover',
+      'focus',
+    ],
+    height: [
+      'responsive',
+      'dark',
+      'group-hover',
+      'focus-within',
+      'hover',
+      'focus',
+    ],
   },
   plugins: [require('@tailwindcss/ui')],
   purge: {
@@ -63,6 +82,9 @@ module.exports = {
       'pages/**/*.vue',
       'plugins/**/*.js',
       'nuxt.config.js',
+      // TypeScript
+      'plugins/**/*.ts',
+      'nuxt.config.ts',
     ],
   },
 }

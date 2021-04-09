@@ -5,7 +5,7 @@ export default {
    ** Nuxt rendering mode
    ** See https://nuxtjs.org/api/configuration-mode
    */
-  mode: 'universal',
+  // mode: 'universal',
   /*
    ** Nuxt target
    ** See https://nuxtjs.org/api/configuration-target
@@ -41,24 +41,29 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['~/assets/css/tailwind.css'],
+  css: [],
   /*
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: ['~/plugins/v-prlx'],
+  plugins: [{ src: '~/plugins/vue-swiper', ssr: false }],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
    */
-  components: true,
+  components: [
+    '~/components/common',
+    '~/components/layout',
+    '~/components/misc',
+    '~/components/portfolio',
+  ],
   /*
    ** Nuxt.js dev-modules
-   */
-  buildModules: [
+   */ buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
+    '@nuxtjs/tailwindcss',
   ],
   /*
    ** Nuxt.js modules
@@ -75,16 +80,9 @@ export default {
   axios: {
     baseURL: 'https://personal-portfolio-be.herokuapp.com',
   },
+
   /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
    */
-  build: {
-    extractCSS: true,
-    postcss: {
-      plugins: {
-        tailwindcss: path.resolve(__dirname, './tailwind.config.js'),
-      },
-    },
-  },
 }

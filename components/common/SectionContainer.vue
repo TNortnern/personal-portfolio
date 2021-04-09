@@ -1,5 +1,9 @@
 <template>
-  <div :class="'container w-full p-4 mx-auto' + computedClasses">
+  <div
+    :class="
+      'container w-full p-5 xl:py-5 xl:px-12 xxl:px-7 mx-auto' + computedClasses
+    "
+  >
     <slot />
   </div>
 </template>
