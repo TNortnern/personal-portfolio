@@ -28,17 +28,19 @@
         <p>{{ skill.name }}</p>
       </div>
     </div>
-    <div
-      class="flex justify-center xl:justify-start xl:absolute xl:bottom-11 2xl:bottom-3 mt-5 xl:mt-0"
-    >
-      <nuxt-link to="#" class="project-modal-link__text mr-5">
-        <p class="relative z-10">Go to Site</p>
-        <div class="project-modal-link__bg"></div>
-      </nuxt-link>
-      <nuxt-link to="#" class="project-modal-link__text">
-        <p class="relative z-10">View on Github</p>
-        <div class="project-modal-link__bg"></div>
-      </nuxt-link>
+    <div class="flex justify-center xl:block">
+      <div
+        class="flex justify-center xl:justify-start md:absolute md:bottom-4 xl:bottom-11 2xl:bottom-3 mt-5 md:mt-0"
+      >
+        <nuxt-link to="#" class="project-modal-link__text mr-5">
+          <p class="relative z-10">Go to Site</p>
+          <div class="project-modal-link__bg group-hover:h-full"></div>
+        </nuxt-link>
+        <nuxt-link to="#" class="project-modal-link__text">
+          <p class="relative z-10">View on Github</p>
+          <div class="project-modal-link__bg group-hover:h-full"></div>
+        </nuxt-link>
+      </div>
     </div>
   </div>
 </template>
@@ -59,14 +61,14 @@ export default {
 </script>
 
 <style scoped>
+.project-modal-link__text {
+  @apply relative flex justify-center items-center px-3 py-2 md:px-6 xl:py-3.5 group text-xs sm:text-base;
+}
 .project-modal-listing {
   @apply mr-2 bg-black p-1.5 rounded-sm text-center mb-2 text-sm sm:text-base min-w-mobile-project-modal-listing;
 }
 .project-modal-link__bg {
-  @apply absolute bg-primary-blue inset-x-0 bottom-0 h-1/12 group-hover:h-full duration-150;
-}
-.project-modal-link__text {
-  @apply relative flex justify-center items-center px-3 py-2 md:px-6 xl:py-3.5 group text-xs sm:text-base;
+  @apply absolute bg-primary-blue inset-x-0 bottom-0 h-1/12  duration-150;
 }
 .project-modal-listing-list {
   @apply flex flex-wrap justify-center xl:justify-start;

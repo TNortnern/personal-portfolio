@@ -61,6 +61,6 @@ export default {
 
 <style>
 .swiper img {
-  @apply xl:h-xl-modal-image xxl:h-2xl-modal-image h-36;
+  @apply xl:h-xl-modal-image xxl:h-2xl-modal-image h-36 md:h-48 lg:h-64;
 }
 </style>
