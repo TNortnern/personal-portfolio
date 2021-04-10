@@ -1,9 +1,27 @@
 <template>
   <div class="h-screen text-white bg-theme-blue">
+    <vue-particles
+      color="#46a29f"
+      :particle-opacity="1"
+      :particles-number="110"
+      shape-type="circle"
+      :particle-size="4"
+      lines-color="#dedede"
+      :lines-width="1"
+      :line-linked="true"
+      :line-opacity="0.4"
+      :lines-distance="150"
+      :move-speed="3"
+      :hover-effect="true"
+      hover-mode="grab"
+      :click-effect="true"
+      click-mode="push"
+      style="height: 100%"
+    />
     <SectionContainer :default-padding="false">
       <Navigation />
       <div
-        class="flex flex-wrap items-center justify-center h-screen mx-auto lg:max-w-6xl"
+        class="flex flex-wrap items-center justify-center absolute inset-0 h-screen mx-auto lg:max-w-6xl"
       >
         <div>
           <div class="text-2xl sm:text-5xl">

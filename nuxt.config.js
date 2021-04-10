@@ -48,6 +48,7 @@ export default {
    */
   plugins: [
     { src: '~/plugins/vue-swiper', ssr: false },
+    { src: '~/plugins/vue-particles', ssr: false },
     '~/plugins/v-click-outside',
   ],
   /*
