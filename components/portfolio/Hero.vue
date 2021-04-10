@@ -10,14 +10,20 @@
             <h1 class="text-center">
               Hello I'm <span class="text-primary-blue">Trayvon Northern</span>
             </h1>
-            <h1>
+            <h1 class="text-center">
               The <span class="text-primary-blue">Full Stack</span> Web
               Developer
             </h1>
           </div>
-          <div class="mt-3 text-center">
-            <button class="mr-2 btn">Portfolio</button>
-            <button class="btn">Resume</button>
+          <div class="mt-5 text-center">
+            <nuxt-link to="#" class="mr-2 btn">Portfolio</nuxt-link>
+            <a target="__blank" href="#" class="btn mr-2">Resume</a>
+            <a
+              target="__blank"
+              href="https://www.fiverr.com/traynorthern?up_rollout=true"
+              class="btn mt-2 lg:mt-0"
+              >Testimonials</a
+            >
           </div>
         </div>
       </div>

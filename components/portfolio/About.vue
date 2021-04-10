@@ -20,7 +20,16 @@
           </p>
           <ul class="flex flex-col pb-4">
             <AboutHighlight name="Email" content="traynorthern@yahoo.com" />
-            <AboutHighlight name="Github" content="tnortnern" />
+            <AboutHighlight
+              name="Github"
+              content="tnortnern"
+              href="https://github.com/tnortnern"
+            />
+            <AboutHighlight
+              name="Fiverr"
+              content="traynorthern"
+              href="https://www.fiverr.com/traynorthern?up_rollout=true"
+            />
             <!-- <AboutHighlight name="LinkedIn" content="https://trayvonnorthern.tech" /> -->
           </ul>
           <nuxt-link to="#resume" class="btn-primary">Resume</nuxt-link>

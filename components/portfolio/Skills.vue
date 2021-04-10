@@ -8,11 +8,11 @@
         <div
           v-for="skill in skills"
           :key="skill.id"
-          class="flex flex-col items-center w-1/3 mb-5 sm:mr-4 xl:flex-row md:w-1/6 lg:mr-4"
+          class="flex flex-col justify-between sm:justify-start h-24 sm:h-auto items-center w-1/3 mb-5 sm:mr-4 xl:flex-row md:w-1/6"
         >
           <img
             v-if="skill.image"
-            class="w-16"
+            class="w-16 sm:mr-4"
             :src="
               (skill.image &&
                 skill.image.formats &&
@@ -22,7 +22,7 @@
             "
             :alt="(skill && skill.image && skill.image.name) || ''"
           />
-          <p>{{ skill.name }}</p>
+          <p class="whitespace-pre">{{ skill.name }}</p>
         </div>
       </div>
     </SectionContainer>

@@ -1,8 +1,19 @@
 <template>
-  <li class="flex pb-2">
-    <div class="w-28 sm:w-56">{{ name }}:</div>
-    <div class="sm:ml-12">{{ content }}</div>
-  </li>
+  <div>
+    <a
+      v-if="href"
+      :href="href"
+      target="__blank"
+      class="inline-flex pb-2 duration-200 hover:text-primary-blue"
+    >
+      <div class="w-28 sm:w-56">{{ name }}:</div>
+      <div class="sm:ml-12">{{ content }}</div>
+    </a>
+    <li v-else class="flex pb-2">
+      <div class="w-28 sm:w-56">{{ name }}:</div>
+      <div class="sm:ml-12">{{ content }}</div>
+    </li>
+  </div>
 </template>
 
 <script>
@@ -13,6 +24,10 @@ export default {
       default: '',
     },
     content: {
+      type: String,
+      default: '',
+    },
+    href: {
       type: String,
       default: '',
     },
