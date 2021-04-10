@@ -6,7 +6,7 @@
         class="flex flex-wrap items-center justify-center h-screen mx-auto lg:max-w-6xl"
       >
         <div>
-          <div class="text-3xl sm:text-5xl">
+          <div class="text-2xl sm:text-5xl">
             <h1 class="text-center">
               Hello I'm <span class="text-primary-blue">Trayvon Northern</span>
             </h1>

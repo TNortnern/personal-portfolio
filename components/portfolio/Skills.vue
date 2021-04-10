@@ -8,7 +8,7 @@
         <div
           v-for="skill in skills"
           :key="skill.id"
-          class="flex flex-col items-center w-1/3 mb-5 mr-0 md:space-x-5 md:flex-row md:w-1/6 lg:mr-4"
+          class="flex flex-col items-center w-1/3 mb-5 sm:mr-4 xl:flex-row md:w-1/6 lg:mr-4"
         >
           <img
             v-if="skill.image"
