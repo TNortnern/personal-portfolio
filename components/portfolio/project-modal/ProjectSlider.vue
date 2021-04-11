@@ -7,8 +7,12 @@
         class="swiper relative z-50"
         :options="swiperOption"
       >
-        <swiper-slide v-for="(item, i) in project.images" :key="item + i">
-          <img class="w-full" :src="item" alt="" />
+        <swiper-slide v-for="media in project.media" :key="media.id">
+          <img
+            class="w-full"
+            :src="getMediaItem(media)"
+            :alt="`${project.title} project`"
+          />
         </swiper-slide>
       </swiper>
     </div>
@@ -22,6 +26,8 @@
 
 <script>
 import { ref, onMounted } from '@nuxtjs/composition-api'
+import { getMediaItem } from '~/helpers'
+
 export default {
   props: {
     project: {
@@ -53,6 +59,7 @@ export default {
       },
       swiper,
       next,
+      getMediaItem,
       prev,
     }
   },

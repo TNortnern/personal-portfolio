@@ -6,11 +6,15 @@ const state = () => ({
   },
   modal: null,
   current: null,
+  projects: [],
 })
 
 const mutations = {
   set(state, { item, content }) {
     state.content[item] = content
+  },
+  setProjects(state, projects) {
+    state.projects = projects
   },
   setModal(state, value) {
     state.modal = value

@@ -1,28 +1,45 @@
 <template>
   <div class="bg-gray-100">
     <SectionContainer id="projects">
+      <button class="btn" @click="logProjects">Log projects</button>
       <SectionTitle name="Projects" />
       <div
-        class="grid grid-cols-1 md:grid-cols-2 md:gap-x-2 xl:gap-x-20 gap-y-8 justify-items-center"
+        class="grid grid-cols-1 md:grid-cols-2 md:gap-x-2 xl:gap-x-3 gap-y-5 justify-items-center"
       >
         <div
-          v-for="(item, i) in projects"
-          :key="i"
+          v-for="item in projects"
+          :key="item.id"
           class="relative bg-white shadow-xl cursor-pointer group"
         >
-          <div class="relative w-full h-full">
-            <img class="w-full h-full" :src="item.images[0]" alt="test" />
+          <div v-if="item" class="relative w-full h-full">
+            <img
+              class="w-full h-full"
+              :src="getMediaItem(item.media[0])"
+              :alt="`${item.title} project`"
+            />
             <div
               class="absolute inset-0 flex items-center justify-center w-full h-full duration-300 ease-in-out bg-white opacity-0 group-hover:opacity-100"
             >
               <div class="flex flex-col items-center font-bold">
                 <h1 class="mb-3 text-xl lg:text-3xl text-theme-blue">
-                  {{ item.name }}
+                  {{ item.title }}
                 </h1>
-                <ul class="flex mb-3 text-lg text-primary-blue">
-                  <li>Strapi/</li>
-                  <li>Vue/</li>
-                  <li>Tailwind</li>
+                <ul
+                  v-if="item.technologies"
+                  class="flex mb-3 text-lg text-primary-blue"
+                >
+                  <li
+                    v-for="(technology, x) in item.technologies.slice(0, 4)"
+                    :key="technology.id"
+                  >
+                    {{ technology.name
+                    }}<template v-if="x !== item.technologies.length - 1"
+                      >/</template
+                    >
+                  </li>
+                  <!-- <li v-if="item.technologies.length > 4">
+                    {{ item.technologies.length - 4 }} more
+                  </li> -->
                 </ul>
                 <button
                   class="text-lg text-white bg-theme-blue btn hover:opacity-75"
@@ -40,25 +57,20 @@
 </template>
 
 <script>
+import { computed, useContext } from '@nuxtjs/composition-api'
+import { getMediaItem } from '~/helpers'
 export default {
-  data: () => ({
-    projects: [],
-  }),
-  async mounted() {
-    const projects = await this.$axios.post(
-      'http://api-portfolio3.herokuapp.com/graphql',
-      {
-        query: `{
-  projects{
-    id
-    name
-    images
-  }
-}`,
-      }
-    )
-    this.projects = projects.data.data.projects
-    console.log('projects', this.projects)
+  setup() {
+    const { store } = useContext()
+    const projects = computed(() => store.state.portfolio.projects)
+
+    return {
+      projects,
+      getMediaItem,
+      logProjects: () => {
+        console.log(`projects`, projects.value)
+      },
+    }
   },
 }
 </script>

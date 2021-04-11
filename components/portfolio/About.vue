@@ -32,7 +32,11 @@
             />
             <!-- <AboutHighlight name="LinkedIn" content="https://trayvonnorthern.tech" /> -->
           </ul>
-          <nuxt-link to="#resume" class="btn-primary">Resume</nuxt-link>
+          <a
+            :href="$store.state.portfolio.content.resumeUrl"
+            class="btn-primary"
+            >Resume</a
+          >
         </div>
         <div class="w-full lg:w-14/25">
           <h3 class="pb-4 mt-8 text-3xl font-bold lg:text-center lg:mt-0">
