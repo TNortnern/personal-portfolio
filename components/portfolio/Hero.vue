@@ -23,7 +23,7 @@
     <SectionContainer :default-padding="false">
       <Navigation />
       <div
-        class="flex flex-wrap items-center justify-center absolute inset-0 h-screen mx-auto lg:max-w-6xl"
+        class="flex flex-wrap items-center justify-center absolute z-30 inset-0 h-screen mx-auto lg:max-w-6xl"
       >
         <div>
           <div class="text-2xl sm:text-5xl">
@@ -37,7 +37,9 @@
             </h1>
           </div>
           <div class="mt-5 text-center">
-            <nuxt-link to="#" class="mr-2 btn">Portfolio</nuxt-link>
+            <a v-scroll-to="'#about'" href="#about" class="mr-2 btn"
+              >Portfolio</a
+            >
             <a
               target="__blank"
               :href="$store.state.portfolio.content.resumeUrl"
@@ -47,7 +49,7 @@
             <a
               target="__blank"
               href="https://www.fiverr.com/traynorthern?up_rollout=true"
-              class="btn mt-2 lg:mt-0"
+              class="btn inline-block mt-5 lg:mt-0"
               >Testimonials</a
             >
           </div>

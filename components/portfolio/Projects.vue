@@ -2,7 +2,9 @@
   <div class="bg-gray-100">
     <SectionContainer id="projects">
       <!-- <button class="btn" @click="logProjects">Log projects</button> -->
-      <SectionTitle name="Projects" />
+      <SectionTitle>
+        My <span class="text-primary-blue">Projects</span>
+      </SectionTitle>
       <div
         class="grid grid-cols-1 md:grid-cols-2 md:gap-x-2 gap-y-3 justify-items-center"
       >

@@ -1,15 +1,10 @@
 <template>
   <div>
-    <transition name="fade">
-      <div
-        v-if="isOpen"
-        class="fixed inset-0 z-20 w-screen h-screen bg-black bg-opacity-75"
-      ></div>
-    </transition>
+    <Overlay :is-open="isOpen !== null" />
     <transition name="scale">
       <div
         v-if="isOpen"
-        class="fixed inset-0 z-30 flex items-center justify-center h-screen"
+        class="fixed inset-0 z-50 flex items-center justify-center h-screen"
       >
         <div
           v-click-outside="toggle"

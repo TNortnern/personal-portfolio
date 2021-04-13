@@ -4,17 +4,17 @@
     <project-slider class="xl:hidden block" :project="project" />
     <div class="xl:h-modal-paragraph mt-5 xl:mt-0">
       {{ project.description }}
-      <p
+      <!-- <p
         v-if="project.isHeroku && project.hosted_url"
         class="text-yellow-200 mt-2"
       >
         Note: Project is hosted on heroku so it may be sleep for 15 seconds
-      </p>
+      </p> -->
     </div>
     <h4 class="text-primary-blue text-2xl mt-8 mb-4">Technologies:</h4>
     <div v-if="project.technologies" class="project-modal-listing-list">
       <div
-        v-for="skill in project.technologies.slice(0, 6)"
+        v-for="skill in project.technologies.slice(0, 4)"
         :key="skill.id"
         class="project-modal-listing"
       >

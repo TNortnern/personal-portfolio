@@ -1,9 +1,9 @@
 <template>
   <div>
-    <SectionContainer :default-padding="false" classes="absolute inset-0 z-20">
+    <SectionContainer :default-padding="false" classes="absolute inset-0">
       <scrollactive
         id="nav"
-        class="w-full py-5"
+        class="w-full py-5 relative z-40"
         always-track
         active-class="text-primary-blue"
         :offset="85"
@@ -11,6 +11,11 @@
         <div>
           <div class="text-white">
             <DesktopNavigation />
+            <div class="lg:hidden relative">
+              <button class="absolute right-0 z-50" @click="toggleMenu">
+                <Hamburger />
+              </button>
+            </div>
           </div>
         </div>
       </scrollactive>
@@ -18,7 +23,7 @@
     <SectionContainer :default-padding="false">
       <scrollactive
         id="fixed-nav"
-        class="fixed top-0 inset-x-0 bg-light-primary-blue duration-500 ease-in-out shadow-lg py-6 px-20 z-30 w-full"
+        class="fixed top-0 inset-x-0 bg-light-primary-blue duration-500 ease-in-out shadow-lg py-6 px-12 z-30 w-full"
         :class="toggleNavClass()"
         always-track
         active-class="text-primary-blue"
@@ -27,6 +32,11 @@
         <div>
           <div class="text-white">
             <DesktopNavigation />
+            <div class="flex justify-end lg:hidden">
+              <button @click="toggleMenu">
+                <Hamburger />
+              </button>
+            </div>
           </div>
         </div>
       </scrollactive>
@@ -36,6 +46,7 @@
 
 <script>
 import { onMounted, ref } from '@nuxtjs/composition-api'
+import { mobileMenuOpen, toggleMenu } from './MobileNavDrawer'
 export default {
   setup() {
     const active = ref(false)
@@ -63,6 +74,8 @@ export default {
       // open,
       toggleNavClass,
       active,
+      mobileMenuOpen,
+      toggleMenu,
       // toggle: () => (open.value = !open.value),
     }
   },

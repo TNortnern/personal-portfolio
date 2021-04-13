@@ -77,6 +77,7 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/composition-api',
+    ['vue-scrollto/nuxt', { duration: 300 }],
   ],
   /*
    ** Axios module configuration

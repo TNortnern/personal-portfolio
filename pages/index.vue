@@ -1,5 +1,6 @@
 <template>
   <div>
+    <MobileNavDrawer />
     <project-modal />
     <AppLayout>
       <Hero />
@@ -41,6 +42,11 @@ export default {
       console.log('err', err.response.data)
       console.log(`err`, err)
     }
+  },
+  methods: {
+    submit() {
+      console.log('submited')
+    },
   },
 }
 </script>

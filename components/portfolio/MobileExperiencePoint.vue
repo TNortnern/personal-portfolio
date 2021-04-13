@@ -34,7 +34,7 @@ export default {
       }
       if (props.item.html) {
         content.value = strip(props.item.html)
-        console.log('props.item.html', strip(props.item.html))
+        // console.log('props.item.html', strip(props.item.html))
       } else {
         content.value = props.item.content
       }
