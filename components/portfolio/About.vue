@@ -1,6 +1,6 @@
 <template>
   <div class="bg-gray-100">
-    <SectionContainer>
+    <SectionContainer id="about">
       <SectionTitle>
         About <span class="text-primary-blue">Me</span>
       </SectionTitle>
@@ -8,15 +8,16 @@
         <div class="w-full lg:w-2/5">
           <h3 class="pb-4 text-3xl font-bold">Who am I?</h3>
           <p class="pb-4">
-            I'm a recent CS Grad that is passionate about Web Development. I
-            enjoy frontend development most, from building UI's to email
-            development.
+            A fast growing full time web developer passionate about Web
+            Development. I have a large array of skillsets from building complex
+            UI/UX, creating advanced API's, and HTML email development.
           </p>
           <p class="pb-4">
-            I always stride to get better and learn more everyday. Lorem ipsum
-            dolor sit amet consectetur adipiscing elit, inceptos blandit vivamus
-            interdum neque laoreet, cubilia velit ac vel imperdiet senectus ut,
-            nullam tortor litora pulvinar dis.
+            I always stride to get better and learn more everyday but I love the
+            current techologies I work with. Something that helps me get better
+            and learn is teaching/consulting, I currently do it as a freelancer.
+            It always a great feeling to be confident in what you do and able to
+            help others thrive!
           </p>
           <ul class="flex flex-col pb-4">
             <AboutHighlight name="Email" content="traynorthern@yahoo.com" />

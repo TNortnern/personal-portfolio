@@ -50,6 +50,7 @@ export default {
     { src: '~/plugins/vue-swiper', ssr: false },
     { src: '~/plugins/vue-particles', ssr: false },
     '~/plugins/v-click-outside',
+    { src: '~/plugins/v-scrollactive', ssr: false },
   ],
   /*
    ** Auto import components

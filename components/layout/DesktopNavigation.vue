@@ -6,17 +6,10 @@
     </nuxt-link>
     <ul class="flex items-center space-x-20">
       <li v-for="route in $store.state.navigation.routes" :key="route.name">
-        <nuxt-link
-          v-if="!route.external"
-          :to="route.to"
-          class="hover:text-primary-blue"
-          >{{ route.name }}</nuxt-link
-        >
         <a
-          v-else
           :href="route.to"
-          target="__blank"
-          class="hover:text-primary-blue"
+          :target="route.external ? '__blank' : ''"
+          class="hover:text-primary-blue scrollactive-item"
           >{{ route.name }}</a
         >
       </li>

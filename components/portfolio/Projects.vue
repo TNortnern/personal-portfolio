@@ -1,6 +1,6 @@
 <template>
   <div class="bg-gray-100">
-    <SectionContainer>
+    <SectionContainer id="projects">
       <!-- <button class="btn" @click="logProjects">Log projects</button> -->
       <SectionTitle name="Projects" />
       <div

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <SectionContainer>
+    <SectionContainer id="skills">
       <SectionTitle>
         My <span class="text-primary-blue">Skills</span>
       </SectionTitle>
