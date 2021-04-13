@@ -2,6 +2,7 @@
   <div>
     <Modal :open="project" :toggle="toggle">
       <div v-if="project" class="text-white">
+        <project-modal-mobile-close :toggle="toggle" />
         <div class="flex xl:justify-between flex-wrap px-8 py-6">
           <project-info :project="project" :skills="skills" />
           <project-slider class="hidden xl:block" :project="project" />

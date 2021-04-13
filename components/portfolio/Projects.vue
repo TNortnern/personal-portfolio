@@ -1,15 +1,15 @@
 <template>
   <div class="bg-gray-100">
-    <SectionContainer id="projects">
-      <button class="btn" @click="logProjects">Log projects</button>
+    <SectionContainer>
+      <!-- <button class="btn" @click="logProjects">Log projects</button> -->
       <SectionTitle name="Projects" />
       <div
-        class="grid grid-cols-1 md:grid-cols-2 md:gap-x-2 xl:gap-x-3 gap-y-5 justify-items-center"
+        class="grid grid-cols-1 md:grid-cols-2 md:gap-x-2 gap-y-3 justify-items-center"
       >
         <div
           v-for="item in projects"
           :key="item.id"
-          class="relative bg-white shadow-xl cursor-pointer group"
+          class="relative bg-white shadow-xl cursor-default group"
         >
           <div v-if="item" class="relative w-full h-full">
             <img
@@ -26,10 +26,10 @@
                 </h1>
                 <ul
                   v-if="item.technologies"
-                  class="flex mb-3 text-lg text-primary-blue"
+                  class="flex flex-wrap mb-3 text-lg text-primary-blue justify-center"
                 >
                   <li
-                    v-for="(technology, x) in item.technologies.slice(0, 4)"
+                    v-for="(technology, x) in item.technologies"
                     :key="technology.id"
                   >
                     {{ technology.name
@@ -38,8 +38,8 @@
                     >
                   </li>
                   <!-- <li v-if="item.technologies.length > 4">
-                    {{ item.technologies.length - 4 }} more
-                  </li> -->
+                      {{ item.technologies.length - 4 }} more
+                    </li> -->
                 </ul>
                 <button
                   class="text-lg text-white bg-theme-blue btn hover:opacity-75"

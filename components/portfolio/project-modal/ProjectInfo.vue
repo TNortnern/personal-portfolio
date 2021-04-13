@@ -2,9 +2,15 @@
   <div class="w-full xl:w-2/5 pt-3">
     <h1 class="xl:text-5xl mb-8 text-2xl text-center">{{ project.title }}</h1>
     <project-slider class="xl:hidden block" :project="project" />
-    <p class="xl:h-modal-paragraph mt-5 xl:mt-0">
+    <div class="xl:h-modal-paragraph mt-5 xl:mt-0">
       {{ project.description }}
-    </p>
+      <p
+        v-if="project.isHeroku && project.hosted_url"
+        class="text-yellow-200 mt-2"
+      >
+        Note: Project is hosted on heroku so it may be sleep for 15 seconds
+      </p>
+    </div>
     <h4 class="text-primary-blue text-2xl mt-8 mb-4">Technologies:</h4>
     <div v-if="project.technologies" class="project-modal-listing-list">
       <div
@@ -27,7 +33,7 @@
     </div>
     <div class="flex justify-center xl:block">
       <div
-        class="flex justify-center xl:justify-start md:absolute md:bottom-4 xl:bottom-11 2xl:bottom-3 mt-5 md:mt-0"
+        class="flex justify-center xl:justify-start md:absolute md:bottom-4 xl:bottom-11 2xl:bottom-3 mt-5 md:mt-0 flex-wrap"
       >
         <a
           v-if="project.hosted_url"
@@ -35,7 +41,8 @@
           target="__blank"
           class="project-modal-link__text mr-5"
         >
-          <p class="relative z-10">Go to Site</p>
+          <div class="relative z-10">Go to Site</div>
+
           <div class="project-modal-link__bg group-hover:h-full"></div>
         </a>
         <button v-else class="project-modal-link__text mr-5">

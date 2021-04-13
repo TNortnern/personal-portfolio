@@ -1,8 +1,7 @@
 <template>
   <div
-    :class="
-      'container w-full p-5 xl:py-5 xl:px-12 xxl:px-7 mx-auto' + computedClasses
-    "
+    style="max-width: 100em"
+    :class="'mx-auto px-4 sm:px-6 lg:px-16' + computedClasses"
   >
     <slot />
   </div>
