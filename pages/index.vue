@@ -1,6 +1,7 @@
 <template>
   <div>
     <MobileNavDrawer />
+    <ContactMenu />
     <project-modal />
     <AppLayout>
       <Hero />

@@ -45,7 +45,11 @@
 
           <div class="project-modal-link__bg group-hover:h-full"></div>
         </a>
-        <button v-else class="project-modal-link__text mr-5">
+        <button
+          v-else
+          class="project-modal-link__text mr-5"
+          @click="toggle(), toggleContactMenu()"
+        >
           <p class="relative z-10">Request a Demo</p>
           <div class="project-modal-link__bg group-hover:h-full"></div>
         </button>
@@ -67,7 +71,18 @@
 </template>
 
 <script>
+import {
+  contactMenuOpen,
+  toggleContactMenu,
+} from '~/components/portfolio/ContactMenu'
+
 export default {
+  setup() {
+    return {
+      toggleContactMenu,
+      contactMenuOpen,
+    }
+  },
   props: {
     project: {
       type: Object,
@@ -76,6 +91,10 @@ export default {
     skills: {
       type: Array,
       default: () => [],
+    },
+    toggle: {
+      type: Function,
+      default: () => {},
     },
   },
 }

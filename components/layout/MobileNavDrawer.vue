@@ -56,20 +56,4 @@ export default {
 }
 </script>
 
-<style>
-.mobile-drawer-enter-active,
-.mobile-drawer-leave-active {
-  transition: all 0.35s;
-  /* position: absolute; */
-}
-
-.mobile-drawer-enter,
-.mobile-drawer-leave-to {
-  transform: translateX(1000px) scale(0.5);
-}
-
-.mobile-drawer-leave,
-.mobile-drawer-enter-to {
-  transform: translateX(0) scale(1);
-}
-</style>
+<style></style>

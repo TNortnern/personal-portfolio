@@ -11,7 +11,10 @@
         <div>
           <div class="text-white">
             <DesktopNavigation />
-            <div class="lg:hidden relative">
+            <div
+              v-if="!contactMenuOpen && !mobileMenuOpen"
+              class="lg:hidden relative"
+            >
               <button class="absolute right-0 z-50" @click="toggleMenu">
                 <Hamburger />
               </button>
@@ -32,7 +35,10 @@
         <div>
           <div class="text-white">
             <DesktopNavigation />
-            <div class="flex justify-end lg:hidden">
+            <div
+              v-if="!contactMenuOpen && !mobileMenuOpen"
+              class="flex justify-end lg:hidden"
+            >
               <button @click="toggleMenu">
                 <Hamburger />
               </button>
@@ -46,6 +52,7 @@
 
 <script>
 import { onMounted, ref } from '@nuxtjs/composition-api'
+import { contactMenuOpen } from '../portfolio/ContactMenu'
 import { mobileMenuOpen, toggleMenu } from './MobileNavDrawer'
 export default {
   setup() {
@@ -76,6 +83,7 @@ export default {
       active,
       mobileMenuOpen,
       toggleMenu,
+      contactMenuOpen,
       // toggle: () => (open.value = !open.value),
     }
   },

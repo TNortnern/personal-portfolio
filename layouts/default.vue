@@ -64,4 +64,34 @@ button:focus {
     max-width: 1280px;
   }
 }
+.mobile-drawer-enter-active,
+.mobile-drawer-leave-active {
+  transition: all 0.35s;
+  /* position: absolute; */
+}
+
+.mobile-drawer-enter,
+.mobile-drawer-leave-to {
+  transform: translateX(1000px) scale(0.5);
+}
+
+.mobile-drawer-leave,
+.mobile-drawer-enter-to {
+  transform: translateX(0) scale(1);
+}
+.contact-drawer-enter-active,
+.contact-drawer-leave-active {
+  transition: all 0.35s;
+  /* position: absolute; */
+}
+
+.contact-drawer-enter,
+.contact-drawer-leave-to {
+  transform: translateX(-1000px) scale(0.5);
+}
+
+.contact-drawer-leave,
+.contact-drawer-enter-to {
+  transform: translateX(0) scale(1);
+}
 </style>
