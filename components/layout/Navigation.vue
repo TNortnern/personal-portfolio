@@ -3,7 +3,7 @@
     <SectionContainer :default-padding="false" classes="absolute inset-0">
       <scrollactive
         id="nav"
-        class="w-full py-5 relative z-40"
+        class="w-full py-8 relative z-40"
         always-track
         active-class="text-primary-blue"
         :offset="85"
