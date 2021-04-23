@@ -40,14 +40,12 @@ export default {
         content: timelines.data,
       })
     } catch (err) {
-      console.log('err', err.response.data)
-      console.log(`err`, err)
+      // console.log('err', err.response.data)
+      // console.log(`err`, err)
     }
   },
-  methods: {
-    submit() {
-      console.log('submited')
-    },
+  head: {
+    title: 'Personal Portfolio',
   },
 }
 </script>
