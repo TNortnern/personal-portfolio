@@ -1,9 +1,9 @@
 <template>
   <div>
-    <SectionContainer :default-padding="false" classes="absolute inset-0">
+    <SectionContainer :default-padding="false" classes="absolute inset-0 mt-8">
       <scrollactive
         id="nav"
-        class="w-full pb-8 mt-8 relative z-35"
+        class="w-full pb-8 relative z-35"
         always-track
         active-class="text-primary-blue"
         :offset="85"
