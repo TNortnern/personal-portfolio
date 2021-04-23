@@ -23,7 +23,7 @@
     <SectionContainer :default-padding="false">
       <Navigation />
       <div
-        class="flex flex-wrap items-center justify-center absolute z-30 inset-0 h-screen mx-auto lg:max-w-6xl"
+        class="flex flex-wrap items-center justify-center absolute z-25 inset-0 h-screen mx-auto lg:max-w-6xl"
       >
         <div>
           <div class="text-2xl sm:text-5xl">

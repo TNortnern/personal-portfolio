@@ -13,7 +13,15 @@
 </template>
 
 <script>
+// import {
+//   contactMenuOpen,
+//   toggleContactMenu,
+// } from '~/components/portfolio/ContactMenu'
 export default {
+  // setup: () => ({
+  //   contactMenuOpen,
+  //   toggleContactMenu,
+  // }),
   async asyncData({ $axios, store }) {
     try {
       const techs = await $axios.get('/technologies?_sort=importance:desc')
@@ -40,14 +48,9 @@ export default {
         content: timelines.data,
       })
     } catch (err) {
-      console.log('err', err.response.data)
-      console.log(`err`, err)
+      // console.log('err', err.response.data)
+      // console.log(`err`, err)
     }
-  },
-  methods: {
-    submit() {
-      console.log('submited')
-    },
   },
 }
 </script>

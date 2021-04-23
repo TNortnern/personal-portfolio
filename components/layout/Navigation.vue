@@ -3,7 +3,7 @@
     <SectionContainer :default-padding="false" classes="absolute inset-0">
       <scrollactive
         id="nav"
-        class="w-full py-8 relative z-40"
+        class="w-full py-8 relative z-35"
         always-track
         active-class="text-primary-blue"
         :offset="85"
@@ -26,7 +26,7 @@
     <SectionContainer :default-padding="false">
       <scrollactive
         id="fixed-nav"
-        class="fixed top-0 inset-x-0 bg-light-primary-blue duration-500 ease-in-out shadow-lg py-6 px-12 z-30 w-full"
+        class="fixed top-0 inset-x-0 bg-light-primary-blue duration-500 ease-in-out shadow-lg py-6 px-12 z-35 w-full"
         :class="toggleNavClass()"
         always-track
         active-class="text-primary-blue"

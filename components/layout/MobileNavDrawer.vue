@@ -37,6 +37,12 @@
             {{ navLink.name }}
           </a>
         </div>
+        <button
+          class="px-1.5 py-1 border rounded-md border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white duration-100 ease-out focus:outline-none"
+          @click="toggleMenu(), toggleContactMenu()"
+        >
+          contact me
+        </button>
       </scrollactive>
     </transition>
   </div>
@@ -44,6 +50,10 @@
 
 <script>
 import { ref } from '@nuxtjs/composition-api'
+import {
+  contactMenuOpen,
+  toggleContactMenu,
+} from '~/components/portfolio/ContactMenu'
 export const mobileMenuOpen = ref(false)
 export const toggleMenu = () => (mobileMenuOpen.value = !mobileMenuOpen.value)
 export default {
@@ -51,6 +61,8 @@ export default {
     return {
       mobileMenuOpen,
       toggleMenu,
+      contactMenuOpen,
+      toggleContactMenu,
     }
   },
 }

@@ -4,14 +4,17 @@
     <transition name="contact-drawer">
       <div
         v-if="contactMenuOpen"
-        class="border-box shadow-2xl fixed top-0 left-0 flex flex-col p-8 border-black space-y-8 bg-light-primary-blue w-3/4 sm:w-2/3 lg:w-1/5 h-full transform transition duration-300 z-50"
+        v-click-outside="
+          () => (contactMenuOpen ? toggleContactMenu() : () => {})
+        "
+        class="border-box shadow-2xl fixed top-0 left-0 flex flex-col p-8 border-black space-y-8 bg-light-primary-blue w-3/4 sm:w-2/3 lg:w-contact-menu-lg h-full transform transition duration-300 z-50"
       >
         <button
           class="ml-auto rounded-xl cursor-pointer hover:text-red-500 focus:text-red-500"
           @click.prevent="toggleContactMenu"
         >
           <svg
-            class="w-7 h-7 text-white fill-current"
+            class="w-7 h-7 text-white hover:text-red-500 fill-current"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -77,7 +80,6 @@ export default {
       contactMenuOpen,
       toggleContactMenu,
       submit: async ({ message, name }) => {
-        console.log(`message`, message)
         try {
           await $axios.post(
             'https://personal-portfolio-be.herokuapp.com/email',
