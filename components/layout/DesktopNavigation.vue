@@ -13,20 +13,29 @@
           >{{ route.name }}</a
         >
       </li>
-      <!-- <li>
+      <li>
         <button
-          to="#"
           class="px-1.5 py-1 border rounded-md border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white duration-100 ease-out focus:outline-none"
+          @click="toggleContactMenu"
         >
           contact me
         </button>
-      </li> -->
+      </li>
     </ul>
   </div>
 </template>
 
 <script>
-export default {}
+import {
+  contactMenuOpen,
+  toggleContactMenu,
+} from '~/components/portfolio/ContactMenu'
+export default {
+  setup: () => ({
+    contactMenuOpen,
+    toggleContactMenu,
+  }),
+}
 </script>
 
 <style></style>

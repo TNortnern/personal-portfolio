@@ -49,12 +49,18 @@ module.exports = {
         'project-info-card': '35rem',
         'project-image': '40.25rem',
         'slider-dekstop-width': '56%',
+        'contact-menu-lg': '356px',
       },
       screens: {
         xxl: '1600px',
       },
       minWidth: {
         'mobile-project-modal-listing': '104.55px',
+      },
+      zIndex: {
+        25: 25,
+        35: 35,
+        45: 45,
       },
     },
   },

@@ -13,7 +13,15 @@
 </template>
 
 <script>
+// import {
+//   contactMenuOpen,
+//   toggleContactMenu,
+// } from '~/components/portfolio/ContactMenu'
 export default {
+  // setup: () => ({
+  //   contactMenuOpen,
+  //   toggleContactMenu,
+  // }),
   async asyncData({ $axios, store }) {
     try {
       const techs = await $axios.get('/technologies?_sort=importance:desc')
