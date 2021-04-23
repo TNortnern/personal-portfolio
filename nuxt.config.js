@@ -26,7 +26,21 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || '',
+        content:
+          "Hi I'm Trayvon Northern, fast growing full time web developer passionate about Web Development. I have a large array of skillsets from building complex UI/UX, creating advanced API's, and HTML email development.",
+      },
+      {
+        name: 'og:description',
+        content:
+          "Hi I'm Trayvon Northern, fast growing full time web developer passionate about Web Development. I have a large array of skillsets from building complex UI/UX, creating advanced API's, and HTML email development.",
+      },
+      {
+        name: 'og:title',
+        content: 'Trayvon Northern - Personal Portfolio',
+      },
+      {
+        name: 'og:image',
+        content: 'https://i.imgur.com/oWZZCSh.png',
       },
     ],
     link: [
