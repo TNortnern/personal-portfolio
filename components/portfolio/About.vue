@@ -20,7 +20,11 @@
             help others thrive!
           </p>
           <ul class="flex flex-col pb-4">
-            <AboutHighlight name="Email" content="traynorthern@yahoo.com" />
+            <AboutHighlight
+              :on-click="toggleContactMenu"
+              name="Email"
+              content="traynorthern@yahoo.com"
+            />
             <AboutHighlight
               name="Github"
               content="tnortnern"
@@ -51,7 +55,12 @@
 </template>
 
 <script>
-export default {}
+import { toggleContactMenu } from '~/components/portfolio/ContactMenu'
+export default {
+  setup: () => ({
+    toggleContactMenu,
+  }),
+}
 </script>
 
 <style></style>

@@ -26,13 +26,9 @@
 </template>
 
 <script>
-import {
-  contactMenuOpen,
-  toggleContactMenu,
-} from '~/components/portfolio/ContactMenu'
+import { toggleContactMenu } from '~/components/portfolio/ContactMenu'
 export default {
   setup: () => ({
-    contactMenuOpen,
     toggleContactMenu,
   }),
 }

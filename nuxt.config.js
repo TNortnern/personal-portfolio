@@ -27,12 +27,12 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          "Hi I'm Trayvon Northern, fast growing full time web developer passionate about Web Development. I have a large array of skillsets from building complex UI/UX, creating advanced API's, and HTML email development.",
+          "Hi I'm Trayvon Northern, a fast growing full time web developer passionate about Web Development. I have a large array of skillsets from building complex UI/UX, creating advanced API's, and HTML email development.",
       },
       {
         name: 'og:description',
         content:
-          "Hi I'm Trayvon Northern, fast growing full time web developer passionate about Web Development. I have a large array of skillsets from building complex UI/UX, creating advanced API's, and HTML email development.",
+          "Hi I'm Trayvon Northern, a fast growing full time web developer passionate about Web Development. I have a large array of skillsets from building complex UI/UX, creating advanced API's, and HTML email development.",
       },
       {
         name: 'og:title',

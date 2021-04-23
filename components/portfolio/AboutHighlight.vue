@@ -9,7 +9,14 @@
       <div class="w-28 sm:w-56">{{ name }}:</div>
       <div class="sm:ml-12">{{ content }}</div>
     </a>
-    <li v-else class="flex pb-2">
+    <li
+      v-else
+      :class="
+        onClick ? 'cursor-pointer duration-200 hover:text-primary-blue' : ''
+      "
+      class="flex pb-2"
+      @click="onClick ? onClick() : () => {}"
+    >
       <div class="w-28 sm:w-56">{{ name }}:</div>
       <div class="sm:ml-12">{{ content }}</div>
     </li>
@@ -30,6 +37,10 @@ export default {
     href: {
       type: String,
       default: '',
+    },
+    onClick: {
+      type: Function,
+      default: null,
     },
   },
 }

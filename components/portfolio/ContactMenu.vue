@@ -31,6 +31,7 @@
         <div class="text-center text-2xl text-white">Contact Me</div>
         <div class="flex justify-center">
           <generic-form
+            ref="form"
             :fields="[
               {
                 name: 'name',
@@ -76,9 +77,11 @@ export default {
   components: { GenericForm },
   setup() {
     const { $axios } = useContext()
+    const form = ref(null)
     return {
       contactMenuOpen,
       toggleContactMenu,
+      form,
       submit: async ({ message, name }) => {
         try {
           await $axios.post(
@@ -92,11 +95,12 @@ export default {
             }
           )
           useSuccessToast({
-            message: 'Success',
+            message: 'Received your message! Thank you.',
           })
+          form.value.initializeForm()
         } catch (error) {
           useWarningToast({
-            message: 'Something went wrong.',
+            message: 'Uh oh... Something went wrong.',
           })
         }
       },
