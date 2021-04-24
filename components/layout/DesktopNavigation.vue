@@ -4,7 +4,7 @@
       <span class="font-bold">Trayvon</span>
       <span class="font-light">Northern</span>
     </nuxt-link>
-    <ul class="flex items-center space-x-20">
+    <ul class="flex items-center space-x-20 relative z-35">
       <li v-for="route in $store.state.navigation.routes" :key="route.name">
         <a
           :href="route.to"
