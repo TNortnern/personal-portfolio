@@ -84,7 +84,7 @@ import { ref, useContext } from '@nuxtjs/composition-api'
 import GenericForm from '../common/genericform/GenericForm.vue'
 import { useSuccessToast, useWarningToast } from '~/hooks/Alerts'
 const loading = ref(false)
-export const contactMenuOpen = ref(true)
+export const contactMenuOpen = ref(false)
 export const toggleContactMenu = (value) => {
   if (!loading.value) {
     if (value === true || value === false) {
