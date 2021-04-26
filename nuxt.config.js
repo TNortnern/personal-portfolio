@@ -92,6 +92,7 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/composition-api',
     ['vue-scrollto/nuxt', { duration: 300 }],
+    'nuxt-lazy-load',
   ],
   /*
    ** Axios module configuration

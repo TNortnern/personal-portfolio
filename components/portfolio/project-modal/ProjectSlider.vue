@@ -7,7 +7,11 @@
         class="swiper relative z-50"
         :options="swiperOption"
       >
-        <swiper-slide v-for="media in project.media" :key="media.id">
+        <swiper-slide
+          v-for="media in project.media"
+          :key="media.id"
+          v-lazy-load
+        >
           <img
             class="w-full"
             :src="getMediaItem(media)"
