@@ -14,7 +14,7 @@
           </p>
           <p class="pb-4">
             I always stride to get better and learn more everyday but I love the
-            current techologies I work with. Something that helps me get better
+            current technologies I work with. Something that helps me get better
             and learn is teaching/consulting, I currently do it as a freelancer.
             It always a great feeling to be confident in what you do and able to
             help others thrive!

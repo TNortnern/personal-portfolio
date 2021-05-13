@@ -8,7 +8,7 @@
       >
         <div
           v-click-outside="toggle"
-          class="w-4/5 md:w-3/4 lg:w-2/3 xl:w-10/12 overflow-y-auto lg:overflow-y-visible shadow-2xl bg-light-primary-blue lg:h-3/4 h-3/4 xl:h-10/12 xxl:h-2/3 relative rounded-lg"
+          class="w-4/5 md:w-3/4 lg:w-2/3 xl:w-10/12 overflow-y-auto lg:overflow-y-visible shadow-2xl bg-light-primary-blue lg:h-3/4 h-3/4 xl:h-10/12 xxl:h-4/5 relative rounded-lg"
         >
           <button
             class="absolute right-6 -translate-y-14 transform z-50 text-5xl text-red-500 hover:text-red-400 duration-150 hover:bg-gray-100 hover:bg-opacity-25 rounded-full p-0.5"

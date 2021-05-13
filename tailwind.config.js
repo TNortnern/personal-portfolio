@@ -8,6 +8,7 @@ module.exports = {
   tailwindcss: {
     // jit: true,
   },
+  // mode: 'jit',s
   theme: {
     extend: {
       colors: {
