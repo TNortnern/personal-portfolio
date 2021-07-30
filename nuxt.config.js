@@ -99,7 +99,7 @@ export default {
    ** See https://axios.nuxtjs.org/options
    */
   axios: {
-    baseURL: 'https://personal-portfolio-be.herokuapp.com',
+    baseURL: 'https://personalport-be.herokuapp.com',
   },
 
   /*

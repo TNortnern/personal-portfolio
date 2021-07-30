@@ -16,8 +16,8 @@
             I always stride to get better and learn more everyday but I love the
             current technologies I work with. Something that helps me get better
             and learn is teaching/consulting, I currently do it as a freelancer.
-            It always a great feeling to be confident in what you do and able to
-            help others thrive!
+            It's always a great feeling to be confident in what you do and able
+            to help others thrive.
           </p>
           <ul class="flex flex-col pb-4">
             <AboutHighlight
