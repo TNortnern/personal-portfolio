@@ -7,14 +7,14 @@
         v-click-outside="
           () => (contactMenuOpen ? toggleContactMenu(false) : () => {})
         "
-        class="border-box shadow-2xl fixed top-0 left-0 flex flex-col p-8 border-black space-y-8 bg-light-primary-blue w-3/4 sm:w-2/3 lg:w-contact-menu-lg h-full transform transition duration-300 z-50"
+        class="fixed top-0 left-0 z-50 flex flex-col w-3/4 h-full p-8 space-y-8 transition duration-300 transform border-black shadow-2xl border-box bg-light-primary-blue sm:w-2/3 lg:w-contact-menu-lg"
       >
         <button
-          class="ml-auto rounded-xl cursor-pointer hover:text-red-500 focus:text-red-500"
+          class="ml-auto cursor-pointer rounded-xl hover:text-red-500 focus:text-red-500"
           @click.prevent="toggleContactMenu"
         >
           <svg
-            class="w-7 h-7 text-white hover:text-red-500 fill-current"
+            class="text-white fill-current w-7 h-7 hover:text-red-500"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -28,7 +28,7 @@
             ></path>
           </svg>
         </button>
-        <div class="text-center text-2xl text-white">Contact Me</div>
+        <div class="text-2xl text-center text-white">Contact Me</div>
         <div class="flex justify-center">
           <div>
             <generic-form
@@ -56,7 +56,7 @@
               <button
                 slot="submit"
                 type="submit"
-                class="mt-3 w-full block"
+                class="block w-full mt-3"
                 :disabled="loading"
                 :class="
                   !loading
@@ -111,16 +111,13 @@ export default {
         }
         loading.value = true
         try {
-          await $axios.post(
-            'https://personal-portfolio-be.herokuapp.com/email',
-            {
-              from: 'foodeater563@outlook.com',
-              to: 'traynorthern@yahoo.com',
-              subject:
-                "Hello Trayvon, I'm interested in speaking with you, " + name,
-              html: message,
-            }
-          )
+          await $axios.post('https://personalport-be.herokuapp.com/email', {
+            from: 'foodeater563@outlook.com',
+            to: 'traynorthern@yahoo.com',
+            subject:
+              "Hello Trayvon, I'm interested in speaking with you, " + name,
+            html: message,
+          })
           useSuccessToast({
             message: 'Received your message! Thank you.',
           })
