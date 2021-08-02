@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-if="!left" class="flex">
+    <div v-if="!Math.abs(index % 2) == 1" class="flex">
       <div class="w-full"></div>
       <!-- Left side -->
       <div class="relative flex items-start justify-center w-16 px-4">
@@ -63,6 +63,10 @@ export default {
     item: {
       type: Object,
       default: () => [],
+    },
+    index: {
+      type: Number,
+      default: 0,
     },
   },
 }

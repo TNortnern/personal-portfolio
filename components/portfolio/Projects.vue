@@ -15,7 +15,7 @@
         >
           <div v-if="item" class="relative w-full h-full">
             <img
-              class="w-full h-full"
+              class="object-cover w-full h-full"
               :src="getMediaItem(item.media[0])"
               :alt="`${item.title} project`"
             />
@@ -28,7 +28,7 @@
                 </h1>
                 <ul
                   v-if="item.technologies"
-                  class="flex flex-wrap mb-3 text-lg text-primary-blue justify-center"
+                  class="flex flex-wrap justify-center mb-3 text-lg text-primary-blue"
                 >
                   <li
                     v-for="(technology, x) in item.technologies"

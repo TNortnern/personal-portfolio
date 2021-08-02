@@ -2,14 +2,16 @@
   <div class="w-full h-full antialiased">
     <div class="hidden lg:block lg:p-12">
       <TimelinePoint
-        v-for="{ id, from, to, end, current, html, content, left } in $store
-          .state.portfolio.content.timelines"
+        v-for="(
+          { id, from, to, end, current, html, content, left }, index
+        ) in $store.state.portfolio.content.timelines"
         :key="id"
         :item="{
           date: handleDate({ from, to, end, current }),
           content: content || null,
           html: html || null,
         }"
+        :index="index"
         :left="left || false"
       >
       </TimelinePoint>
