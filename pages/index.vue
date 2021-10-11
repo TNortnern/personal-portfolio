@@ -27,7 +27,9 @@ export default {
       const techs = await $axios.get('/technologies?_sort=importance:desc')
       const introText = await $axios.get('/hero-intro')
       const timelines = await $axios.get('/timelines')
-      const projects = await $axios.get('/projects?_sort=importance:desc')
+      const projects = await $axios.get(
+        '/projects?_sort=importance:desc&isActive=true'
+      )
       const resumeUrl = await $axios.get('/resume-url')
       // const meDescription = await $axios.get('/me-description')
       // console.log(`projects2`, projects.data)

@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "nuxt --port=3011",
     "build": "nuxt build",
+    "git:deploy": "Xcopy /E /I dist staticdeploys",
     "start": "nuxt start",
     "deploy": "nuxt build && nuxt generate",
     "generate": "nuxt generate",
